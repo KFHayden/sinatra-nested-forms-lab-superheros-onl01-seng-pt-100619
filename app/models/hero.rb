@@ -2,7 +2,8 @@ class Hero
   
   @@all = []
   
-  attr_reader :name, :power, :bio
+  attr_reader :name, :power
+  attr_accessor :bio
   
   def initialize(params)
     @name = params[:name]
