@@ -1,7 +1,7 @@
 <h1> <%= @team %> </h1><br>
 <h2>Team Motto:<%= @motto %> </h2><br>
 
-<% @members.each.with_index do |info, i| %>
+<% @members.each do |info| %>
 <h2>Hero Name: <%= info[:name] %> </h2><br>
 <p>Hero Power: <%= info[:power] %> </p>
 <p>Hero Biography: <%= info[:bio] %> </p>
