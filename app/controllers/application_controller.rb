@@ -14,7 +14,6 @@ class App < Sinatra::Base
       params[:team][:members].each do |info|
         Hero.new(info)
       end
-        
       @heroes = Hero.all
       
       erb :team
