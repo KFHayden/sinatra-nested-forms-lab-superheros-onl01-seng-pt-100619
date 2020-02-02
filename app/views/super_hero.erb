@@ -1,1 +1,15 @@
-
+<form method="post" action="/team">
+  <h1>Create a Team and Heroes!</h1><br>
+  <p>
+    <label for="name">Team Name:</label>
+    <input type="text" name="team[name]">
+    <label for="motto">Team Motto:</label>
+    <input type="text" name="team[motto]">
+  </p>
+  <h2>Hero 1</h2>
+  <p>
+    <label for="member1_name">Hero's Name:</label>
+    <input type="text" name="team[name][][member_name]">
+  </p>
+  <input type="submit" value="Submit">
+</form>
