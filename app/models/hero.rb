@@ -8,8 +8,10 @@ class Hero
     @name = params[:name]
     @power = params[:power]
     @bio = params[:bio]
-    @@all << self
+    save
   end
+  
+  
   
   def self.all
     @@all
