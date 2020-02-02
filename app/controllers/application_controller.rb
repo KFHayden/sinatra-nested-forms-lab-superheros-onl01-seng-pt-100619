@@ -14,7 +14,7 @@ class App < Sinatra::Base
       @motto = params[:team][:motto]
       @members = params[:team][:members]
       
-      erb :super_hero
+      erb :team
     end
 
 end
